@@ -1,8 +1,12 @@
 <body>
 <div>
-  <h1>{{this.title}}</h1>
+  <h1>Hey {{this.userName}}, {{this.title}}</h1>
   <img [src]="imgUrl" (click)="onClick($event)" 
        alt="Its just a Logo!">
+</div>
+<div>
+  What is your name?<br>
+  <input [(ngModel)]="userName">
 </div>
 </body>
 
