@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hello';
   imgUrl="../assets/Logo/BridgeLabz New Logo.svg";
+  url="https://www.google.co.in/";
 
   ngOnInit():void {
     this.title="Bridgelabz says Hello";
+  }
+
+  onClick($event){
+    console.log("A button is clicked!",$event);
+    window.open(this.url,"_blank");
   }
 }
